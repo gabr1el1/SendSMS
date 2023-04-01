@@ -71,7 +71,6 @@ var memCharacters: Integer;
 begin
   memCharacters:=memMessage.Lines.Text.Length;
   Label1.Text:='Total de caracteres escritos: '+memCharacters.ToString+' de 160';
-  memMessage.ReadOnly:=True;
 end;
 
 end.
