@@ -69,6 +69,8 @@ end;
 procedure TfrmSMS.memMessageChangeTracking(Sender: TObject);
 var memCharacters: Integer;
 begin
+  //Si hay un cambio en el texto del memo se actualiza el label
+  //de caracteres
   memCharacters:=memMessage.Lines.Text.Length;
   Label1.Text:='Total de caracteres escritos: '+memCharacters.ToString+' de 160';
 end;
